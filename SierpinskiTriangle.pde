@@ -1,13 +1,20 @@
 boolean mor = false;
 boolean les = false;
-int piece = 50;
+int piece = 500;
 public void setup()
 {
 size(500,500);
 }
 public void draw()
 {
-sierpinski(0,0,500); 
+			background(0);
+	if (mor==true) {
+		piece++;
+	}
+	if (les==true) {
+		piece--;
+	}
+sierpinski(0,0,piece); 
 }
 public void mouseDragged()//optional
 {
