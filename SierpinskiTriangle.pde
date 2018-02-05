@@ -9,10 +9,10 @@ public void draw()
 {
 			background(0);
 	if (mor==true) {
-		piece++;
+		piece+=10;
 	}
 	if (les==true) {
-		piece--;
+		piece-=10;
 	}
 sierpinski(0,0,piece); 
 }
